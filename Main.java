@@ -9,8 +9,7 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        BufferedImage bImage = ImageIO.read(new File("src/hiddenMessage.png"));
-        ByteArrayOutputStream bos = new ByteArrayOutputStream();
+        BufferedImage bImage = ImageIO.read(new File("hiddenMessage.png"));
         String extractedBlue = "";
         for (int y = 0; y < bImage.getHeight(); y++) {
             for (int x = 0; x < bImage.getWidth(); x++) {
